@@ -1,0 +1,57 @@
+#box{
+    width: 80%;
+    min-height: 80%;
+    text-align: center;
+    color:black;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: white;
+    margin: 5%;
+}
+h1{
+    color:  rgb(247, 222, 4);
+}
+.boxtuyensinh .titlemain{
+    color: rgb(255, 238, 0);
+    font-size: 22px;
+    text-align: center;
+}
+.boxtuyensinh  .tbtuyensinh ul{
+    border-right: 0.01em dotted #1b18cf;
+    font-size: 18px;
+    margin: 10px;;
+    display: block;
+}
+
+#cot1{
+    width: 25%;
+    float: left;
+    padding: 7px;
+    box-sizing: border-box;
+    list-style-type: none;
+
+}
+#cot2{
+    width: 25%;
+    float: left;
+    padding: 7px;
+    box-sizing: border-box;
+    list-style-type: none;
+
+}
+#cot3{
+    width: 25%;
+    float: left;
+    padding: 7px;
+    box-sizing: border-box;
+    list-style-type: none;
+
+}
+#cot4{
+    width: 25%;
+    float: right;
+    padding: 7px;
+    box-sizing: border-box;
+    list-style-type: none;
+
+}

@@ -1,0 +1,48 @@
+#box {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    color:black;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: white;
+    margin: 5%;
+    
+}
+.boxhoatdong .titlemain{
+  color: rgb(247, 222, 4);
+  font-size: 22px;
+  text-align: center;
+}
+.cot1 {
+  width: 33%;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.cot2 {
+  width: 33%;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.cot3 {
+  width: 33%;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+}
+h4 {
+  text-align: center;
+}
+h5 {
+  text-align: right;
+}
+
+p {
+  text-align: left;
+}
+i {
+  color: gray;
+  text-align: right;
+}

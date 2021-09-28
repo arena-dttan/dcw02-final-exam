@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Phạm Duy Khang </title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                background-image: url(./img/bg.png);
+
+            }
+            
+            .menu {
+                height: 80px;
+                line-height: 80px;
+            }
+            
+            .home {
+                border-left: 0.01em dotted #00aeef;
+            }
+            
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                /* background: #F8C800; */
+                background: #0085be;
+                /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2); */
+            }
+            
+            li {
+                float: left;
+                border-right: 0.01em dotted #00aeef;
+                font-size: 18px;
+            }
+            
+            li.dropdown {
+                display: inline-block;
+                width: 180px;
+            }
+            
+            li a:hover,
+            .dropdown:hover {
+                background: #00aeef;
+            }
+            
+            li a,
+            .dropdown-btn {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 0 16px;
+                text-decoration: none;
+            }
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                /*background: #F8C800;
+            */
+                background: #0085be;
+                min-width: 180px;
+                border-bottom: 0.01em dotted #00aeef;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+                z-index: 1;
+                top: 80px;
+                transition: all .3s ease-in-out;
+            }
+            
+            .dropdown-content a {
+                color: white;
+                padding: 10px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                line-height: 2;
+            }
+            
+            .dropdown-content a:hover {
+                background: #00aeef;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            #container{
+                background: white;
+        width: 1200px;
+        height: 500px;
+        border-radius: 20px;
+        margin-top: 100px;
+        margin-left: 350px;
+            }
+
+            h1{
+                color: #FACC2E;
+          text-align: center;
+          font-family: sans-serif;
+          padding: 0%;
+            }
+            #col-1{
+                width: 25%;
+                height: auto;
+                float: left;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            #col-2{
+                width: 25%;
+                height: auto;
+                float: left;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            #col-3{
+                width: 25%;
+                height: auto;
+                float: left;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            #col-4{
+                width: 25%;
+                height: auto;
+                float: right;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            h2{
+                font-family: sans-serif;
+            }
+
+        </style>
+        
+        <!-- html -->
+        < id="main-menu">
+            <ul class="menu">
+                <li>
+                    <img src="./img/311220201609416002.png" width="200px">
+                </li>
+                <li class="home">
+                    <a href="./index.html"> Home</a>
+                </li>
+                <li>
+                    <a href="./gioithieu.html"> Giới thiệu</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-btn"> Đào tạo - Tuyển sinh</a>
+                    <div class="dropdown-content">
+                        <a href="./daotao.html">Đào tạo</a>
+                        <a href="./tuyensinh.html">Tuyển sinh</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./gallery.html"> Gallery</a>
+                </li>
+                <li>
+                    <a href="./tintuc.html"> Tin tức - Sự kiện</a>
+                </li>
+                <li>
+                    <a href="./final-exam-list.html">Bài nộp</a>
+                </li>
+        
+                <li>
+                    <a href="#">Liên hệ</a>
+                </li>
+            </ul>
+        <div id="container" class="box-sizing">
+            <h1>Thông báo Tuyển sinh năm 2021</h1>
+            <div id="col-1" class="box-sizing">
+                <h2>Chuyên Nghành</h2>
+                <hr>
+                <p> 
+                    <br> Mỹ Thuật 
+                    <br> Đa Phương Tiện
+                </p>
+            </div>
+            <div id="col-2" class="box-sizing">
+                <h2>Khu Vực Tuyển Sinh</h2>
+            <hr>
+            <p> 
+                <br> Toàn Quốc
+            </p>
+            </div>
+            <div id="col-3" class="box-sizing">
+                <h2>Đối Tượng Tuyển Sinh</h2>
+                <hr>
+                <p>
+                    <br> Học Sinh THPT
+                    <br> Sinh Viên 
+                    <br> Người đi làm
+                </p>
+            </div>
+            <div id="col-4" class="box-sizing">
+                <h2>Hình Thức Tuyển Sinh</h2>
+                <hr>
+                <p>
+                    <br> Cách 1: Thi Tuyển Trực Tiếp
+                    <br> Cách 2: Nộp Porfolio
+                </p>
+            </div>
+        </div>
+        </div>

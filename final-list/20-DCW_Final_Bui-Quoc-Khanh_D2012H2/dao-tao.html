@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Tìm hiểu ngay</title>
+      <meta charset="utf-8">
+      <style>
+        body {
+        background-image: url(./bg.png);
+      }
+      .menu {
+        height: 80px;
+        line-height: 80px;
+      }
+
+      .home {
+        border-left: 0.01em dotted #00aeef;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background: #F8C800; */
+        background: #0085be;
+        /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2); */
+      }
+
+      .menu li {
+        float: left;
+        border-right: 0.01em dotted #00aeef;
+        font-size: 18px;
+      }
+
+      .menu li.dropdown {
+        display: inline-block;
+        width: 180px;
+      }
+
+      .menu li a:hover,
+      .dropdown:hover {
+        background: #00aeef;
+      }
+
+      .menu li a,
+      .dropdown-btn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 0 16px;
+        text-decoration: none;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background: #0085be;
+        min-width: 180px;
+        border-bottom: 0.01em dotted #00aeef;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+        z-index: 1;
+        top: 80px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        line-height: 2;
+      }
+
+      .dropdown-content a:hover {
+        background: #00aeef;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      /* .container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .text {
+        width: 100%;
+        height: 100%;
+        float: left;
+        margin-top: 100px;
+        margin-left: 20px;
+        padding-bottom: 20px;
+      } */
+
+      .background {
+        height: 100%;
+        width: 100%;
+        float: right;
+      }
+
+      .logo {
+        margin-top: 15px;
+      }
+
+      .btn-1 a {
+        width: 200px;
+        height: 50px;
+        background: #facc2e;
+        color: white;
+        padding: 10px;
+        margin-left: 70px;
+        border-radius: 20px;
+        text-decoration: none;
+      }
+      #container {
+        width: 1200px;
+        height: 640px;
+        background: white;
+        margin-left: 118px;
+        margin-top: 35px;
+        border: 1px solid blue;
+        border-radius: 40px;
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 5px;
+        text-align: center;
+      }
+
+      .col-1 {
+        width: 400px;
+        height: 100%;
+        float: left;
+        text-align: justify;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .col-2 {
+        width: 400px;
+        height: 100%;
+        float: left;
+        text-align: justify;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .col-3 {
+        width: 400px;
+        height: 100%;
+        float: left;
+        text-align: justify;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      i {
+        float: right;
+      }
+
+      .list {
+        box-sizing: border-box;
+        margin: 0 auto;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      h1 {
+        color: #facc2e;
+      }
+          #container{
+              width: 1200px;
+              height: 640px;
+              background: white;
+              margin-left: 118px;
+              margin-top: 35px;
+              border: 1px solid blue;
+              border-radius: 40px;
+              padding-top: 5px;
+              padding-left: 20px;
+              padding-right: 20px;
+              padding-bottom: 5px;
+              text-align: center;
+          }
+
+          h1{
+              color: #FACC2E;
+          }
+
+          p{
+              text-align: center;
+              font-size: 18px;
+          }
+
+          .list li{
+              list-style-type: disc;
+              border: none;
+          }
+
+          .list p{
+              font-size: 16px;
+              text-align: left;
+          }
+
+          .mon{
+              text-align: left;
+          }
+
+      </style>
+  </head>
+
+  <body>
+    <div id="main-menu">
+      <ul class="menu">
+        <li>
+          <div class="logo">
+            <img
+            src="../DCW_Final_Bui-Quoc-Khanh_D2012H2/Index/logo-2.webp"
+              alt="logo"
+              height="60px"
+              width="400px"
+            />
+          </div>
+        </li>
+        <li class="home">
+          <a href="./index.html"> Home</a>
+        </li>
+        <li>
+          <a href="./gioi-thieu.html"> Giới thiệu</a>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-btn"> Đào tạo-Tuyển sinh</a>
+          <div class="dropdown-content">
+            <a href="./dao-tao.html">Đào tạo</a>
+            <a href="./tuyen-sinh.html">Tuyển sinh</a>
+          </div>
+        </li>
+        <li>
+          <a href="./gallery.html"> Gallery</a>
+        </li>
+        <li>
+          <a href="./tin-tuc.html"> Tin tức - Sự kiện</a>
+        </li>
+        <li>
+          <a href="./final-exam-list.html">Bài nộp</a>
+        </li>
+
+        <li>
+          <a href="#">Liên hệ</a>
+        </li>
+      </ul>
+    </div>
+    <div id="container">
+      <h4><b>Học kì I: Graphic Design</b></h4>
+      <h1>
+        <b
+          >Thiết kế<br />
+          Đồ họa</b
+        >
+      </h1>
+      <p>
+        Với kiến thức của các môn học cơ bản như: Vẽ tay, Nguyên lý thị giác,
+        Nhiếp ảnh, Photoshop, Xử lý hình ảnh, Nghệ thuật chữ, minh họa kỹ thuật
+        số, dàn trang sách báo... tạo lập đồ họa hiệu quả bằng phần mềm Adobe
+        Photoshop, chỉnh sửa ảnh thành tạo bằng Lightroom đủ để làm nền tảng cho
+        một Chuyên viên Thiết kế Đồ họa thỏa sức sáng tạo với những ý tưởng của
+        mình. Cuối mỗi môn đều có bài tập thực hành để ứng dụng những gì đã học
+        và tạo ra một bộ nhận diện thương hiệu mang đậm dấu ấn cá nhân.
+        <br />
+        <div class="mon">
+        <b>MÔN HỌC</b>
+        </div>
+      </p>
+      <ol class="list">
+        <li>
+          <p>Mỹ học cơ bản</p>
+        </li>
+        <li>
+          <p>Quy tắc thiết kế và nguyên lí thị giác</p>
+        </li>
+        <li>
+          <p>Minh họa kĩ thuật số</p>
+        </li>
+        <li>
+          <p>Nhiếp ảnh cơ bản</p>
+        </li>
+        <li>
+          <p>Xử lý ảnh kỹ thuật số</p>
+        </li>
+        <li>
+          <p>Chỉnh ảnh với phần mềm lightroom</p>
+        </li>
+        <li>
+          <p>Nghệ thuật chữ</p>
+        </li>
+        <li>
+          <p>Thiết kế dàn trang sách, báo</p>
+        </li>
+        <li>
+          <p>Thiết kế cho in ấn và quảng cáo</p>
+        </li>
+        <li>
+          <p>Đồ án cuối kì I</p>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>

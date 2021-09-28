@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đào Nhật Hoàng</title>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url(./image/bg.png);
+        }
+    
+    .menu {
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .logo{
+        padding: 13px;
+    }
+    
+    .home {
+        border-left: 0.01em dotted #00aeef;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+       background: #0085be;
+       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2); 
+    }
+    
+    li {
+        float: left;
+        border-right: 0.01em dotted #00aeef;
+        font-size: 18px;
+    }
+    
+    li.dropdown {
+        display: inline-block;
+        width: 180px;
+    }
+    
+    li a:hover,
+    .dropdown:hover {
+        background: #00aeef;
+    }
+    
+    li a,
+    .dropdown-btn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 0 16px;
+        text-decoration: none;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background: #0085be;
+        min-width: 180px;
+        border-bottom: 0.01em dotted #00aeef;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+        z-index: 1;
+        top: 80px;
+        transition: all .3s ease-in-out;
+    }
+    
+    .dropdown-content a {
+        color: white;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        line-height: 2;
+    }
+    
+    .dropdown-content a:hover {
+        background: #00aeef;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #container{
+        width: 1000px;
+        height: 450px;
+        background: white;
+        margin-left: 188px;
+        margin-top: 35px;
+        border: 1px solid blue;
+        border-radius: 40px;
+        padding: 20px;
+    }
+
+    h1{
+        color: #FACC2E;
+        text-align: center;
+    }
+
+    #cot-1{
+        width: 250px;
+        height: 300px;
+        float: left;
+    }
+
+    #cot-2{
+        width: 250px;
+        height: 300px;
+        float: left;
+    }
+
+    #cot-3{
+        width: 250px;
+        height: 300px;
+        float: left;
+    }
+
+    #cot-4{
+        width: 250px;
+        height: 300px;
+        float: right;  
+    }
+
+    .box-sizing{
+        box-sizing: border-box;
+        padding: 10px;
+        }
+
+    h2{
+        text-align: center;
+    }
+    
+    p{
+        font-size: 18px;
+    }
+     </style>   
+</head>
+<body>
+    <div id="main-menu">
+        <ul class="menu">
+            
+            <li class="logo">
+                    <img src="./image/â.webp" alt="logo" width="100px">
+            </li>
+            
+            <li class="home">
+                <a href="./index.html"> Home</a>
+            </li>
+            
+            <li>
+                <a href="./gioi-thieu.html"> Giới thiệu</a>
+            </li>
+            
+            <li class="dropdown">
+                <a class="dropdown-btn"> Đào tạo -Tuyển sinh</a>
+                <div class="dropdown-content">
+                    <a href="./chuong-trinh-dao-tao.html">Đào tạo</a>
+                    <a href="./tuyen-sinh.html">Tuyển sinh</a>
+                </div>
+            </li>
+            
+            <li>
+                <a href="./gallery.html"> Gallery</a>
+            </li>
+            
+            <li>
+                <a href="./tin-tuc.html"> Tin tức - Sự kiện</a>
+            </li>
+            
+            <li>
+                <a href="./final-exam-list.html">Bài nộp</a>
+            </li>
+    
+            <li>
+                <a href="#">Liên hệ</a>
+            </li>
+        </ul>   
+
+        <div id="container">
+            <h1><b>THÔNG BÁO TUYỂN SINH NĂM 2021</b></h1>
+            
+            <div id="cot-1" class="box-sizing">
+                <h2><b>Chuyên Ngành</b></h2>
+                <hr>
+                <p>Mỹ thuật</p>
+                <p>Đa phương tiện</p>
+            </div>
+            
+            <div id="cot-2" class="box-sizing">
+                <h2><b>Khu vực tuyển sinh</b></h2>
+                <hr>
+                <p>Toàn quốc</p>
+            </div>
+
+            <div id="cot-3" class="box-sizing">
+                <h2><b>Đối tượng tuyển sinh</b></h2>
+                <hr>
+                <p>Học sinh THPT</p>
+                <p>Sinh viên</p>
+                <p>Người đi làm</p>
+            </div>
+
+            <div id="cot-4" class="box-sizing">
+                <h2><b>Hình thức tuyển sinh</b></h2>
+                <hr>
+                <p>Cách 1: Thi tuyển sinh trực tiếp</p>
+                <p>Cách 2: Nộp Porfolio</p>
+            </div>
+            
+        </div>
+        
+</body>
+</html>

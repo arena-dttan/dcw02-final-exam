@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Đào tạo</title>
+      <meta charset="UTF-8">
+      
+      <style>
+        body{
+            background-image: url(./image/bg.png);
+        }    
+        .menu {
+            height: 80px;
+            line-height: 80px;
+        }
+        
+        .hinh{
+            margin-top: 100px;
+            padding-left: 35px;
+        }
+        
+        .home {
+            border-left: 0.01em dotted #00aeef;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #0085be;
+        }
+        
+        li {
+            float: left;
+            border-right: 0.01em dotted #00aeef;
+            font-size: 18px;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+            width: 180px;
+        }
+        
+        li a:hover,
+        .dropdown:hover {
+            background: #00aeef;
+        }
+        
+        li a,
+        .dropdown-btn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 0 16px;
+            text-decoration: none;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #0085be;
+            min-width: 180px;
+            border-bottom: 0.01em dotted #00aeef;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+            z-index: 1;
+            top: 80px;
+            transition: all .3s ease-in-out;
+        }
+        
+        .dropdown-content a {
+            color: white;
+            padding: 10px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            line-height: 2;
+        }
+        
+        .dropdown-content a:hover {
+            background: #00aeef;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }   
+        
+        #container {
+        display:inline-block;
+        background: white;
+        width: 950px;
+        height: 700px;
+        border-radius: 20px;
+        margin-top: 15px;
+        margin-left: 135px;
+        border-color: blue;
+        }
+
+        h4{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+            color: #FACC2E;
+            font-family: Arial, Helvetica, sans-serif ; 
+        }
+
+        h2{
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        p{
+            text-align: left;
+            margin-left: 20px;
+            margin-right: 20px;
+        }    
+
+        #ul{
+            text-align: left;
+            margin-left: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="main-menu">
+        <ul class="menu">
+            <li>
+                <img src="image/311220201609416002.png" width="190px">
+            </li>
+            <li class="home">
+                <a href="./Trang index.html"> Home</a>
+            </li>
+            <li>
+                <a href="./Trang gioi-thieu.html"> Giới thiệu</a>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-btn"> Đào tạo - Tuyển sinh</a>
+                <div class="dropdown-content">
+                    <a href="./Trang dao-tao.html">Đào tạo</a>
+                    <a href="./Trang tuyen-sinh.html">Tuyển sinh</a>
+                </div>
+            </li>
+            <li>
+                <a href="./Trang gallery.html"> Gallery</a>
+            </li>
+            <li>
+                <a href="./Trang tin-tuc.html"> Tin tức - Sự kiện</a>
+            </li>
+            <li>
+                <a href="./final-exam-list.html">Bài nộp</a>
+            </li>
+    
+            <li>
+                <a href="#">Liên hệ</a>
+            </li>
+        </ul>
+        </div>
+    
+    <div id="container">
+        <h4>Học kỳ I: Graphic Design</h4>
+        
+        <h1>Thiết kế<br>Đồ họa</h1>
+        
+        <p>Với kiến thức của các môn học cơ bản như: Vẽ tay, Nguyên lý thị giác,
+            Nhiếp ảnh, Photoshop, Xử lý hình ảnh, Nghệ thuật chữ, minh họa kỹ
+            thuật số, dàn trang sách báo... tạo lập đồ họa hiệu quả bằng phần mềm
+            Adobe Photoshop, chỉnh sửa ảnh thành tạo bằng Lightroom đủ để làm
+            nền tảng cho một Chuyên viên Thiết kế Đồ họa thỏa sức sáng tạo với
+            những ý tưởng của mình. Cuối mỗi môn đều có bài tập thực hành để
+            ứng dụng những gì đã học và tạo ra một bộ nhận diện thương hiệu
+            mang đậm dấu ấn cá nhân.</p>
+            
+        <p><h2>Môn học</h2></p>
+
+      <div id="ul">
+        <br><li>Mỹ thuật cơ bản</li><br>
+        <br><li>Quy tắc thiết kế và Nguyên lý thị giác</li><br>
+        <br><li>Minh họa kỹ thuật số</li><br>
+        <br><li>Nhiếp ảnh cơ bản</li><br>
+        <br><li>Xử lý ảnh kỹ thuật số</li><br>
+        <br><li>Chỉnh ảnh với phần mềm Lightroom</li><br>
+        <br><li>Nghệ thuật chữ</li><br>
+        <br><li>Thiết kế dàn trang sách, báo</li><br>
+        <br><li>Thiết kế cho in ấn và quảng cáo</li><br>
+        <br><li>Đồ án cuối kì I</li><br>
+
+</div>
+
+
+
+</html>

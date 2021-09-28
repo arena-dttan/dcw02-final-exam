@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <title>Bài nộp</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./CSS/menu.css">
+    <style>
+        body{
+            background-image: url(./image/DCW-Final-Images/bg.png);
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+        }
+        #maintain{
+            background-color: white;
+            border-radius: 40px;
+            height: 600px;
+            width: 1060px;
+            margin-top: 30px;
+            text-align: center;
+            display: inline-block;
+        }
+        
+
+    </style>
+<body>  
+    <div id="main-menu">
+        <ul class="menu">
+            <li><a href="./index.html"><img style="margin-top: 5px;" src="./image/DCW-Final-Images/index/logo-2.webp" alt="Back to home page"></a></li>
+            <li class="home">
+                <a href="./index.html"> Home</a>
+            </li>
+            <li>
+                <a href="./gioi-thieu.html"> Giới thiệu</a>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-btn"> Đào tạo - Tuyển sinh</a>
+                <div class="dropdown-content">
+                    <a href="./dao-tao.html">Đào tạo</a>
+                    <a href="./tuyen-sinh.html">Tuyển sinh</a>
+                </div>
+            </li>
+            <li>
+                <a href="./gallery.html"> Gallery</a>
+            </li>
+            <li>
+                <a href="./tin-tuc.html"> Tin tức - Sự kiện</a>
+            </li>
+            <li>
+                <a href="./final-exam-list.html">Bài nộp</a>
+            </li>
+    
+            <li>
+                <a href="https://www.google.com/search?q=arena+multimedia&sxsrf=AOaemvLAqrAoY6-RaomeXEZV2PVhL7Oylw%3A1632667377601&source=hp&ei=8YZQYYDOIYqT3LUPuOmM2AU&iflsig=ALs-wAMAAAAAYVCVAbLGsQ6uIicSW4tCZbhjv1Sm8Y7v&oq=are&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIECCMQJzIECCMQJzIHCAAQsQMQQzIKCC4QxwEQowIQQzIKCAAQgAQQhwIQFDIFCC4QgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgAEEM6CAguELEDEIMBOg4ILhCABBCxAxDHARCjAjoICAAQsQMQgwE6CwguEIAEELEDEIMBOggILhCABBCxA1DMAljZBWCqDWgAcAB4AIABcIgBqQKSAQMyLjGYAQCgAQE&sclient=gws-wiz">Liên hệ</a>
+            </li>
+        </ul>
+
+   
+   <div id="maintain">
+        <img style="width: 90;height: 80%;margin-top: 30px;" src="./image/DCW-Final-Images/maintain.png"></img>
+        <p id="demo"></p>
+        <script>
+            var countDownDate = new Date("Feb 1, 2022 00:00:00").getTime();
+            var x = setInterval(function() {
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+ 
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+     
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+        </script>
+   </div>
+    
+
+</body>
+</head>
+</html>

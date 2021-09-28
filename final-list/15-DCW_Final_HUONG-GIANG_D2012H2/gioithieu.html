@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+    .menu {
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        margin: 0;
+        box-shadow: 0 7px 10px black;
+        
+    }
+    
+    .home {
+        border-left: 0.01em dotted #00aeef;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background: #F8C800; */
+        background: #0085be;
+        /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2); */
+    }
+    
+    li {
+        float: left;
+        border-right: 0.01em dotted #00aeef;
+        font-size: 18px;
+    }
+    
+    li.dropdown {
+        display: inline-block;
+        width: 180px;
+    }
+    
+    li a:hover,
+    .dropdown:hover {
+        background: #00aeef;
+    }
+    
+    li a,
+    .dropdown-btn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 0 16px;
+        text-decoration: none;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        /*background: #F8C800;
+    */
+        background: #0085be;
+        min-width: 180px;
+        border-bottom: 0.01em dotted #00aeef;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+        z-index: 1;
+        top: 80px;
+        transition: all .3s ease-in-out;
+    }
+    
+    .dropdown-content a {
+        color: white;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        line-height: 2;
+    }
+    
+    .dropdown-content a:hover {
+        background: #00aeef;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    #logo{
+        float: left;
+        margin-top: 10px;
+        margin-left: 8px;
+    }
+    body{
+        background-image: url("image/bg.png");
+        text-align: center; 
+        }
+        #container{
+            background-color: white;
+            width: 1200px;
+            height: 610px;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top:40px;
+            margin-left: 20px;
+            font-size: smaller;
+            border: 2px solid blue;
+        }
+        h1{
+            color:#fcd042;
+            display: inline-block;
+           padding-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        hr{
+            margin-top: 5px;
+        }
+        .lefttext{
+            width: 400px;
+            height: 300px;
+            float: left;
+            margin-left: 20px;
+            box-sizing: border-box;
+        }
+        #img1{
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+        #h3left{
+            margin-left: 150px;
+            text-align: left;
+            padding-left: 30px;
+        }
+        #h3right{
+            margin-left: 100px;
+            text-align: left;
+        }
+        .righttext{
+            width: 700px;
+            height: 300px;
+            float: right;
+            box-sizing: border-box;
+            text-align: left;
+        }
+        #img2{
+            margin-top: 100px;
+            margin-left: 10px;
+        }
+        p{
+            margin-left: 10px;
+            text-align: left; 
+        }
+        #gachngang{
+            margin-left: 10px;
+            text-align: left; 
+        }
+
+</style>
+</head>
+<body>
+  
+<div id="main-menu">
+    <ul class="menu">
+        <img id="logo" src="./image/logo.webp" width="auto" height="60px">
+        <li class="home">
+            <a href="./index.html"> Home</a>
+        </li>
+        <li>
+            <a href="./gioithieu.htm"> Giới thiệu</a>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-btn"> Đào tạo - Tuyển sinh</a>
+            <div class="dropdown-content">
+                <a href="./daotao.html">Đào tạo</a>
+                <a href="./tuyensinh.html">Tuyển sinh</a>
+            </div>
+        </li>
+        <li>
+            <a href="./gallery.html"> Gallery</a>
+        </li>
+        <li>
+            <a href="./tintuc.html"> Tin tức - Sự kiện</a>
+        </li>
+        <li>
+            <a href="./final-exam-list.html">Bài nộp</a>
+        </li>
+
+        <li>
+            <a href="#">Liên hệ</a>
+        </li>
+    </ul>
+</div>
+<div id="container">
+    <div id="header">
+    <h1><b>TẠI SAO CHỌN ARENA MULTIMEDIA</b></h1>
+    <hr>
+    </div>
+    <div class="lefttext">
+    <img id="img1" src="./image/gioi-thieu-1.png" width="350px" height="200px">
+    <h3 id="h3left">Chính sách khuyến học đa dạng</h3>
+    <div id="gachngang">
+    <div>– Cấp học bổng cho những tài năng trẻ.</div>
+    <div>– Các chương trình hỗ trợ tín dụng giáo dục.</div>
+    <div>– Khen thưởng, tặng học bổng cho học viên có thành tích học</div>
+    </div>
+    </div>
+    <div class="righttext">
+    <h3 id="h3right">Phương pháp đào tạo tiên tiến, môi trường đào tạo tiêu chuẩn</h3>
+    <p>Phương pháp đào tạo tiên tiến, môi trường đào tạo tiêu chuẩn
+        Phần lớn thời lượng của chương trình dành cho thực hành hoặc lý
+        thuyết tạo nền tảng cho thực hành. Mỗi học kỳ có 2 – 3 môn học thuần
+        túy lý thuyết liên quan đến chủ đề chính của học kỳ đó. Ngoài kỹ năng
+        sử dụng phần mềm, học viên còn được trang bị hệ thống lý thuyết và
+        phương pháp luận xuyên suốt, nhờ đó việc sử dụng các công cụ phần
+        mềm sẽ đạt hiệu quả cao hơn, nắm vững cách xây dựng các sản phẩm
+        Mỹ thuật Đa phương tiện có chất lượng cao một cách sáng tạo và khoa
+        học.<br>
+        Sĩ số của mỗi lớp học không vượt quá 25 học viên, đảm bảo việc
+        truyền đạt kiến thức và tương tác giữa giảng viên – học viên được hiệu
+        quả nhất.</p>
+        <img id="img2" src="./image/gioi-thieu-2.png" width="350px" height="200">
+    </div>
+    </div>
+</body>
+</html>

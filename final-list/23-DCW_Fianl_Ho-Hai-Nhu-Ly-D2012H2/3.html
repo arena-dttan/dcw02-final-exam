@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hồ Hải Như Lý</title>
+ <meta charles="UTF8">
+ <style>
+ html, body {
+               background-image: url(./image/bg.png);
+               text-align: center;
+               width: 100%;
+             }
+       
+             .menu {
+               height: 80px;
+               line-height: 80px;
+             }
+       
+             .home {
+               border-left: 0.01em dotted #00aeef;
+             }
+       
+             ul {
+               list-style-type: none;
+               margin: 0;
+               padding: 0;
+               overflow: hidden;
+               /* background: #F8C800; */
+               background: #0085be;
+               /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2); */
+             }
+       
+             li {
+               float: left;
+               border-right: 0.01em dotted #00aeef;
+               font-size: 18px;
+             }
+       
+             li.dropdown {
+               display: inline-block;
+               width: 180px;
+             }
+       
+             li a:hover,
+             .dropdown:hover {
+               background: #00aeef;
+             }
+       
+             li a,
+             .dropdown-btn {
+               display: inline-block;
+               color: white;
+               text-align: center;
+               padding: 0 16px;
+               text-decoration: none;
+             }
+       
+             .content {
+               display: none;
+               position: absolute;
+               /*background: #F8C800;
+                   */
+               background: #0085be;
+               min-width: 180px;
+               border-bottom: 0.01em dotted #00aeef;
+               box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+               z-index: 1;
+               top: 80px;
+               transition: all 0.3s ease-in-out;
+             }
+       
+             .content a {
+               color: white;
+               padding: 10px 16px;
+               text-decoration: none;
+               display: block;
+               text-align: center;
+               line-height: 2;
+             }
+       
+             .content a:hover {
+               background: #00aeef;
+             }
+       
+             .dropdown:hover .content {
+               display: block;
+             }
+             #container {
+               background: white;
+               width: 1200px;
+               height: 600px;
+               border-radius: 20px;
+               margin-top: 10px;
+               margin-left: 60px;
+             }
+             h1{
+                 color: #FACC2E;
+             }
+             p{
+               text-align: left;
+               margin-left: 20px;
+             }
+             h3{
+               text-align: left;
+               margin-left: 20px;
+             }
+             
+           
+             .danhsach{
+               background: white;
+               list-style-type: disc;
+               padding-left: 40px;
+               box-sizing: border-box;
+               display: block;
+               width: 400px;
+               height: auto;
+               font-size: 11px;
+             }
+            </style>
+    </head>
+    <body>
+     <div id="main menu">
+        <ul class="menu">
+            <li>
+                <img src="./image/logo-2.webp" width="400px"/>
+            </li>
+            <li class="home">
+                <a href="./th.html"> Home </a>
+            </li>
+            <li>
+                <a href="./2.html"> Giới Thiệu </a>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-btn"> Đào Tạo - Tuyển Sinh </a>
+                <div class="content">
+                    <a href="./3.html"> Đào Tạo </a>
+                    <a href="./tuyen-sinh.html"> Tuyển Sinh </a>
+                </div>
+            </li>
+            <li>
+                <a href="./4.html"> Gallery </a>
+            </li>
+            <li>
+                <a href="./5.html"> Tin Tức - Sự Kiện </a>
+            </li>
+            <li>
+                <a href="./final-exam-list.html"> Bài Nộp </a>
+            </li>
+            <li>
+                <a href="#"> Liên Hệ </a>
+            </li>
+        </ul>
+  
+<div id="container">
+    <br>
+    <h2>Học kỳ I: Graphic Design</h2>
+    <h1>Thiết kế 
+        <br> Đồ họa
+     </h1>
+     <p>Với kiến thức của các môn học cơ bản như: Vẽ tay, Nguyên lý thị giác,
+        Nhiếp ảnh, Photoshop, Xử lý hình ảnh, Nghệ thuật chữ, minh họa kỹ
+        thuật số, dàn trang sách báo... tạo lập đồ họa hiệu quả bằng phần mềm
+        Adobe Photoshop, chỉnh sửa ảnh thành tạo bằng Lightroom đủ để làm
+        nền tảng cho một Chuyên viên Thiết kế Đồ họa thỏa sức sáng tạo với
+        những ý tưởng của mình. Cuối mỗi môn đều có bài tập thực hành để
+        ứng dụng những gì đã học và tạo ra một bộ nhận diện thương hiệu
+        mang đậm dấu ấn cá nhân.</p>
+        <h3>Môn Học</h3>
+        <ul class="danhsach">
+            <br><li>Mỹ học cơ bản</li><br>
+            <br><li>Quy tắc thiết kế và Nguyên lý thị giác</li><br>
+            <br><li>Minh họa kỹ thuật số</li><br>
+            <br><li>Nhiếp ảnh cơ bản</li><br>
+            <br><li>Xử lý ảnh kỹ thuật số</li><br>
+            <br><li>Chỉnh ảnh với phần mềm Lightroom</li><br>
+            <br><li>Nghệ thuật chữ</li><br>
+            <br><li>Thiết kế dàn trang sách, báo</li><br>
+            <br><li>Thiết kế cho in ấn và quảng cáo</li><br>
+            <br><li>Đồ án cuối kì I</li><br>
+            
+
+          </ul>
+        </div>
+    </div>
+</body>
+</html>
+             
+             
+               

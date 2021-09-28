@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TranCongThai</title>
+    <meta charset="UTF-8">
+    <style>
+            /* Sử dụng cho định dạng main menu */
+    
+    body {
+        background-image: url(./image/bg.png);
+        font-size: 13px;
+    }
+    .logo {
+        padding: 10px;
+    }
+    .menu {
+        height: 80px;
+        line-height: 80px;
+    }
+    
+    .home {
+        border-left: 0.01em dotted #00aeef;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background: #F8C800; */
+        background: #0085be;
+        /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2); */
+    }
+    
+    li {
+        float: left;
+        border-right: 0.01em dotted #00aeef;
+        font-size: 18px;
+    }
+    
+    li.dropdown {
+        display: inline-block;
+        width: 180px;
+    }
+    
+    li a:hover,
+    .dropdown:hover {
+        background: #00aeef;
+    }
+    
+    li a,
+    .dropdown-btn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 0 16px;
+        text-decoration: none;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        /*background: #F8C800;
+    */
+        background: #0085be;
+        min-width: 180px;
+        border-bottom: 0.01em dotted #00aeef;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+        z-index: 1;
+        top: 80px;
+        transition: all .3s ease-in-out;
+    }
+    
+    .dropdown-content a {
+        color: white;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        line-height: 2;
+    }
+    
+    .dropdown-content a:hover {
+        background: #00aeef;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    #container {
+        background: white;
+        width:1200px;
+        height:600px;
+        border-radius: 2em;
+        margin-top: 30px;
+        margin-left: 150px;
+    }
+    h2 {
+        color: rgb(255, 217, 0);
+        text-align: center;
+        padding-top: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    .col-1 {
+        width: 50%;
+        height: 100%;
+        float: left;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .col-2 {
+        width: 50%;
+        height: 100%;
+        float: right;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    #h3-1 {
+        margin-left: 200px;
+    }
+    #h3-2{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    #hinh-2 {
+        margin-top: 100px;
+    }
+
+    </style>
+
+</head> 
+<body>
+    <div id="main-menu">
+        <ul class="menu">
+            <li class="logo">
+                <img src="./image/logo.webp" width="100px" alt="logo">
+            </li>
+            <li class="home">
+                <a href="./index.html"> Home</a>
+            </li>
+            <li>
+                <a href="./gioi-thieu.html"> Giới thiệu</a>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-btn"> Đào tạo - Tuyển sinh</a>
+                <div class="dropdown-content">
+                    <a href="./dao-tao.html">Đào tạo</a>
+                    <a href="./tuyen-sinh.html">Tuyển sinh</a>
+                </div>
+            </li>
+            <li>
+                <a href="./gallery.html"> Gallery</a>
+            </li>
+            <li>
+                <a href="./tin-tuc.html"> Tin tức - Sự kiện</a>
+            </li>
+            <li>
+                <a href="./final-exam-list.html">Bài nộp</a>
+            </li>
+    
+            <li>
+                <a href="#">Liên hệ</a>
+            </li>
+        </ul>
+        <div id="container">
+            <h2>TẠO SAO CHỌN ARENA MULTIMEDIA</h2>
+            <hr class="gray_border">
+            <div class="col-1">
+                <img src="./image/gioi-thieu-1.png" width="340px" height="190px">
+                <h3 id="h3-1">Chính sách khuyến học đa dạng</h3>
+                <p>
+                    – Cấp học bổng cho những tài năng trẻ.<br>
+                    – Các chương trình hỗ trợ tín dụng giáo dục.<br>
+                    – Khen thưởng, tặng học bổng cho học viên có thành tích học tập tốt.
+                </p>
+            </div>
+            <div class="col-2">
+                <h3 id="h3-2">Phương pháp đào tạo tiên tiến, môi trường đào tạo tiêu chuẩn</h3>
+                <p>
+                    Phần lớn thời lượng của chương trình dành cho thực hành hoặc lý thuyết tạo nền tảng cho thực hành. Mỗi học kỳ có 2 – 3 môn học thuần túy lý thuyết liên quan đến chủ đề chính của học kỳ đó. Ngoài kỹ năng sử dụng phần mềm, học viên còn được trang bị hệ thống lý thuyết và phương pháp luận xuyên suốt, nhờ đó việc sử dụng các công cụ phần mềm sẽ đạt hiệu quả cao hơn, nắm vững cách xây dựng các sản phẩm Mỹ thuật Đa phương tiện có chất lượng cao một cách sáng tạo và khoa
+                    học.<br>
+                    Sĩ số của mỗi lớp học không vượt quá 25 học viên, đảm bảo việc truyền đạt kiến thức và tương tác giữa giảng viên – học viên được hiệu
+                    quả nhất.
+                </p>
+                <div id="hinh-2">
+                    <img src="image/gioi-thieu-2.png" width="340px" height="190px">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>   
+</html>

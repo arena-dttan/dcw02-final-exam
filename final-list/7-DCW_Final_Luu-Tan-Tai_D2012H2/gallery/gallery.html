@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Bài Cuối Môn</title>
+  <meta charset="UTF-8" />
+  <!-- css -->
+  <style>
+    .menu {
+      height: 80px;
+      line-height: 80px;
+      margin: center;
+    }
+
+    .home {
+      border-left: 0.01em dotted #00aeef;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      /* background: #F8C800; */
+      background: #0085be;
+      /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2); */
+    }
+
+    li {
+      float: left;
+      border-right: 0.01em dotted #00aeef;
+      font-size: 18px;
+    }
+
+    li.dropdown {
+      display: inline-block;
+      width: 180px;
+    }
+
+    li a:hover,
+    .dropdown:hover {
+      background: #00aeef;
+    }
+
+    li a,
+    .dropdown-btn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 0 16px;
+      text-decoration: none;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      /*background: #F8C800;
+    */
+      background: #0085be;
+      min-width: 180px;
+      border-bottom: 0.01em dotted #00aeef;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+      z-index: 1;
+      top: 80px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      line-height: 2;
+    }
+
+    .dropdown-content a:hover {
+      background: #00aeef;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    body {
+      background-image: url("../index/bg.png");
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      background: white;
+      width: 80%;
+      height: 800px;
+      border-radius: 20px;
+      margin: 0 auto;
+    }
+
+    .row {
+      width: 95%;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    #col-1,
+    #col-2,
+    #col-3 {
+      display: block;
+      width: 30%;
+    }
+
+    .image-container {
+      display: block;
+      width: 100%;
+      height: 300px;
+      text-align: right;
+      font-style: italic;
+    }
+
+    .image-container img {
+      display: block;
+      width: 100%;
+      height: 200px;
+    }
+  </style>
+
+  <div id="main-menu">
+    <ul class="menu">
+      <li>
+        <a href="../index/index.html">
+          <img
+            src="../index/logo.webp"
+            style="width: 150px; height: 60px; margin: 5px"
+        /></a>
+      </li>
+      <li class="home">
+        <a href="../index/index.html"> Home</a>
+      </li>
+      <li>
+        <a href="../gioi-thieu/gioi-thieu.html"> Giới thiệu</a>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-btn"> Đào tạo - Tuyển sinh</a>
+        <div class="dropdown-content">
+          <a href="../dao-tao/dao-tao.html">Đào tạo</a>
+          <a href="../tuyen-sinh/tuyen-sinh.html">Tuyển sinh</a>
+        </div>
+      </li>
+      <li>
+        <a href="./gallery.html"> Gallery</a>
+      </li>
+      <li>
+        <a href="../tin-tuc/tin-tuc.html"> Tin tức - Sự kiện</a>
+      </li>
+      <li>
+        <a href="./final-exam-list.html">Bài nộp</a>
+      </li>
+
+      <li>
+        <a href="#">Liên hệ</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="container">
+    <h2
+      style="
+        text-transform: uppercase;
+        text-align: center;
+        padding: 20px;
+        color: #facc2e;
+      "
+    >
+      hoạt động học viên
+    </h2>
+    <div class="row">
+      <div id="col-1">
+        <div class="image-container">
+          <img src="gallery-1.jpg" />
+          <span>Thứ Hai, 18-01-2021</span>
+        </div>
+        <h3 style="text-align: center">
+          APE-LAND – Tinh cầu rực rỡ của những kẻ mộng mơ
+        </h3>
+        <p style="text-align: justify">
+          Trở lại với concept vũ trụ, tối ngày 20/12 vừa qua tại trung tâm tổ
+          chức sự kiện CenxSpace, bữa tiệc Giáng Sinh do Arena Multimedia phối
+          hợp với Aptech đồng tổ chức đã thu hút sự có mặt của gần 300 Arenaites
+          và Aptechites. Với khu vực check-in cực chất, quầy teabreak ấn
+          tượng,...
+        </p>
+      </div>
+
+      <div id="col-2">
+        <div class="image-container">
+          <img src="gallery-2.png" />
+          <span>Thứ 4, 22-07-2020</span>
+        </div>
+        <h3 style="text-align: center">
+          Chìa khóa cho sự sáng tạo và những nguyên tắc cần biết
+        </h3>
+        <p style="text-align: justify">
+          Trở lại với concept vũ trụ, tối ngày 20/12 vừa qua tại trung tâm tổ
+          chức sự kiện CenxSpace, bữa tiệc Giáng Sinh do Arena Multimedia phối
+          hợp với Aptech đồng tổ chức đã thu hút sự có mặt của gần 300 Arenaites
+          và Aptechites. Với khu vực check-in cực chất, quầy teabreak ấn
+          tượng,...
+        </p>
+      </div>
+
+      <div id="col-3">
+        <div class="image-container">
+          <img src="gallery-3.jpg" />
+          <span>Thứ Tư, 08-07-2020</span>
+        </div>
+        <h3 style="text-align: center">
+          Trở thành ứng viên sáng giá trong lần phỏng vấn đầu tiên cùng Mr.
+          Araki Kiyotoshi
+        </h3>
+        <p style="text-align: justify">
+          Xuất hiện trong bộ trang phục chỉnh chu chuẩn phong thái người Nhật,
+          diễn giả Mr. Araki Kiyotoshi (Phó Tổng giám đốc công ty TNHH Sekisho
+          Việt Nam) ghi điểm trong mắt các bạn trẻ tại buổi seminar “Cách viết
+          CV & đối sách phỏng vấn” diễn ra vào ngày 26/6 bởi sự đơn giản,...
+        </p>
+      </div>
+    </div>
+  </div>
+</head>

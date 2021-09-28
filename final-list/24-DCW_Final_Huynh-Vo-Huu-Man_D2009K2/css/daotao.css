@@ -1,0 +1,46 @@
+#box{
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    color:black;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: white;
+    margin: 5%;
+}
+
+.boxdaotao .titledaotao{
+    margin-top:3%;
+    font-size: 22px;
+    color:#000;
+    font-weight: bold;
+    display: inline-block;
+}
+.boxdaotao .titlemain{
+    color: rgb(247, 222, 4);
+    font-size: 22px;
+}
+.boxdaotao .contenttext{
+    text-align: left;
+    margin:3%;
+    font-size: 17px;
+    letter-spacing:1.3px
+}
+.boxdaotao .contentmonhoc{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+.boxdaotao .contentmonhoc li{
+   text-align: left;
+   margin-left: 3%;
+   transition: all 0.25s linear;
+   font-size: 14px;
+}
+.boxdaotao .titlelistmonhoc{
+    text-align: left;
+}
+.boxdaotao .contentmonhoc li:first-child{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Bài tập cuối môn - Phan Huy Hoàng</title>
+        <style>
+            html,
+            body{
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+                background-image: url(../bg.png);
+                background-size: 125%;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .menu {
+                box-shadow: 0px 7px 10px;
+                height: 80px;
+                line-height: 80px;
+            }
+            .home {
+            border-left: 0.01em dotted #00aeef;
+            }
+            .ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background: #F8C800;
+                background: #0085be;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+            }
+            
+            .li {
+                float: left;
+                border-right: 0.01em dotted #00aeef;
+                font-size: 18px;
+            }
+            
+            li.dropdown {
+                display: inline-block;
+                width: 183px;
+            }
+            
+            li a:hover,
+            .dropdown:hover {
+                background: #00aeef;
+            }
+            
+            li a,
+            .dropdown-btn {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 0 16px;
+                text-decoration: none;
+            }
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background: #F8C800;
+                background: #0085be;
+                min-width: 183px;
+                border-bottom: 0.01em dotted #00aeef;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+                z-index: 1;
+                top: 80px;
+                transition: all .3s ease-in-out;
+            }
+            
+            .dropdown-content a {
+                color: white;
+                padding: 10px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                line-height: 2;
+            }
+            
+            .dropdown-content a:hover {
+                background: #00aeef;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .logo{
+                float: left;
+                width: auto;
+                height: 60px;
+                line-height: 60px;
+                padding: 10px;
+            }
+            #container{
+                display: inline-block;
+                width: 80%;
+                height: 800px;
+                background-color: white;
+                margin-top: 30px;
+                border-radius: 40px;
+                margin-left: 160px;
+            }
+            .header{
+                margin-top: 40px;
+                text-align: center;
+                color: #f2cc2e;
+                font-size: 30px;
+            }
+            .content{
+                padding-left: 30px;
+                padding-right: 30px;
+                margin-top: 50px;
+                font-size: 23px;
+                box-sizing: border-box;
+            }
+        </style>
+
+    </head>
+
+    <body>
+            <div id="main-menu">
+                <ul class="menu ul">
+                    <img class="logo" src="../index/logo.webp">
+                    <li class="home li">
+                        <a href="../index/index.html"> Home</a>
+                    </li>
+                    <li class="li">
+                        <a href="../gioi-thieu/gioithieu.html"> Giới thiệu</a>
+                    </li>
+                    <li class="dropdown li">
+                        <a class="dropdown-btn"> Đào tạo - Tuyển sinh</a>
+                        <div class="dropdown-content">
+                            <a href="./dao-tao.html">Đào tạo</a>
+                            <a href="../tuyen-sinh/tuyen-sinh.html">Tuyển sinh</a>
+                        </div>
+                    </li>
+                    <li class="li">
+                        <a href="../gallery/gallery.html"> Gallery</a>
+                    </li>
+                    <li class="li">
+                        <a href="../tin-tuc/tin-tuc.html"> Tin tức - Sự kiện</a>
+                    </li>
+                    <li class="li">
+                        <a href="../index/index.html">Bài nộp</a>
+                    </li>
+            
+                    <li class="li">
+                        <a href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="container">
+                <h3 style="text-align: center;">Học kỳ I: Graphic Design</h3>
+                <div class="header">
+                    <h2>Thiết kế<br>Đồ họa</h2>
+                </div>
+                <div class="content">
+                    <p>Với kiến thức của các môn học cơ bản như: Vẽ tay, Nguyên lý thị giác,
+                        Nhiếp ảnh, Photoshop, Xử lý hình ảnh, Nghệ thuật chữ, minh họa kỹ
+                        thuật số, dàn trang sách báo... tạo lập đồ họa hiệu quả bằng phần mềm
+                        Adobe Photoshop, chỉnh sửa ảnh thành tạo bằng Lightroom đủ để làm
+                        nền tảng cho một Chuyên viên Thiết kế Đồ họa thỏa sức sáng tạo với
+                        những ý tưởng của mình. Cuối mỗi môn đều có bài tập thực hành để
+                        ứng dụng những gì đã học và tạo ra một bộ nhận diện thương hiệu
+                        mang đậm dấu ấn cá nhân.<br><b style="font-size: 27px;">Môn học</b></p>
+                </div>
+                <div>
+                    <ul style="margin-left: 10px; font-size: 25px;">
+                        <li>Mỹ học cơ bản</li>
+                        <li>Quy tắc thiết kế và Nguyên lý thị giác</li>
+                        <li>Minh họa kỹ thuật số</li>
+                        <li>Nhiếp ảnh cơ bản</li>
+                        <li>Xử lý ảnh kỹ thuật số</li>
+                        <li>Chỉnh ảnh với phần mềm Lightroom</li>
+                        <li>Nghệ thuật chữ</li>
+                        <li>Thiết kế dàn trang sách, báo</li>
+                        <li>Thiết kế cho in ấn và quảng cáo</li>
+                        <li>Đồ án cuối kì I</li>
+                    </ul>
+                </div>
+            </div>
+    </body>
+
+</html>

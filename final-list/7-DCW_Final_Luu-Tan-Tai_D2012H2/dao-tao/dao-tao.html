@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+  <head>
+    <title>Bài Cuối Môn</title>
+    <meta charset="UTF-8" />
+    <!-- css -->
+    <style>
+         
+      .menu {
+        height: 80px;
+        line-height: 80px;
+        margin: center;
+      }
+
+      .home {
+        border-left: 0.01em dotted #00aeef;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background: #F8C800; */
+        background: #0085be;
+        /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2); */
+      }
+
+      li {
+        float: left;
+        border-right: 0.01em dotted #00aeef;
+        font-size: 18px;
+      }
+
+      li.dropdown {
+        display: inline-block;
+        width: 180px;
+      }
+
+      li a:hover,
+      .dropdown:hover {
+        background: #00aeef;
+      }
+
+      li a,
+      .dropdown-btn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 0 16px;
+        text-decoration: none;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        /*background: #F8C800;
+    */
+        background: #0085be;
+        min-width: 180px;
+        border-bottom: 0.01em dotted #00aeef;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+        z-index: 1;
+        top: 80px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        line-height: 2;
+      }
+
+      .dropdown-content a:hover {
+        background: #00aeef;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      body {
+        background-image: url("../index/bg.png");
+        margin: 0;
+        padding: 0;
+      }
+      #container {
+        background: white;
+        width: 1200px;
+        height: 640px;
+        border-radius: 20px;
+        margin: 0 auto;
+      }
+      h4 {
+        text-align: center;
+      }
+      h1 {
+        color: #facc2e;
+        text-align: center;
+        font: bold "Open Sans", sans-serif;
+        margin: 2px;
+      }
+      p {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      h3 {
+        padding: 20px;
+      }
+
+    </style>
+  </head>
+
+  <!-- html -->
+  <div id="main-menu">
+    <ul class="menu">
+        <li ><a href="../index/index.html"> <img src="../index/logo.webp" style="width: 150px; height: 60px;margin:5px;" /></a></li>
+      <li class="home">
+        <a href="../index/index.html"> Home</a>
+      </li>
+      <li>
+        <a href="../gioi-thieu/gioi-thieu.html"> Giới thiệu</a>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-btn"> Đào tạo - Tuyển sinh</a>
+        <div class="dropdown-content">
+          <a href="./dao-tao.html">Đào tạo</a>
+          <a href="../tuyen-sinh/tuyen-sinh.html">Tuyển sinh</a>
+        </div>
+      </li>
+      <li>
+        <a href="../gallery/gallery.html"> Gallery</a>
+      </li>
+      <li>
+        <a href="../tin-tuc/tin-tuc.html"> Tin tức - Sự kiện</a>
+      </li>
+      <li>
+        <a href="./final-exam-list.html">Bài nộp</a>
+      </li>
+
+      <li>
+        <a href="#">Liên hệ</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="container">
+    <h4 style="padding: 20px">Học kì 1: Graphic Design</h4>
+    <h1>Thiết kế</h1>
+    <h1>Đồ hoạ</h1>
+    <p style="margin-bottom: 0;">
+      Với kiến thức của các môn học cơ bản như: Vẽ tay, Nguyên lý thị giác,
+      Nhiếp ảnh, Photoshop, Xử lý hình ảnh, Nghệ thuật chữ, minh họa kỹ thuật
+      số, dàn trang sách báo... tạo lập đồ họa hiệu quả bằng phần mềm Adobe
+      Photoshop, chỉnh sửa ảnh thành tạo bằng Lightroom đủ để làm nền tảng cho
+      một Chuyên viên Thiết kế Đồ họa thỏa sức sáng tạo với những ý tưởng của
+      mình. Cuối mỗi môn đều có bài tập thực hành để ứng dụng những gì đã học và
+      tạo ra một bộ nhận diện thương hiệu mang đậm dấu ấn cá nhân.
+    </p>
+    <h3 style="margin: 3px; padding-top:0px;">Môn học</h3>
+    <div>
+        
+            <p> • Mỹ học cơ bản</p>
+            <p> • Quy tắc thiết kế và Nguyên lý thị giác</p>
+            <p> • Minh họa kỹ thuật số</p>
+            <p> • Nhiếp ảnh cơ bản</p>
+            <p> • Xử lý ảnh kỹ thuật số</p>
+            <p> • Chỉnh ảnh với phần mềm Lightroom</p>
+            <p> • Nghệ thuật chữ</p>
+            <p> • Thiết kế dàn trang sách, báo</p>
+            <p> • Thiết kế cho in ấn và quảng cáo</p>
+            <p> • Đồ án cuối kì I</p>    
+       
+    </div>
+    
+  </div>
+</html>

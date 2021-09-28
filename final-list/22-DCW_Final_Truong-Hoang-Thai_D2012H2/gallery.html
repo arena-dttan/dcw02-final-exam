@@ -1,0 +1,220 @@
+
+<style>
+   .menu {
+      height: 80px;
+      line-height: 80px;
+   }
+   
+   .home {
+       border-left: 0.01em dotted #00aeef;
+   }
+   
+   ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+       background: #0085be;
+   }
+   
+   li {
+       float: left;
+       border-right: 0.01em dotted #00aeef;
+       font-size: 18px;
+   }
+   
+   li.dropdown {
+       display: inline-block;
+       width: 180px;
+   }
+   
+   li a:hover,
+   .dropdown:hover {
+       background: #00aeef;
+   }
+   
+   li a,
+   .dropdown-btn {
+       display: inline-block;
+       color: white;
+       text-align: center;
+       padding: 0 16px;
+       text-decoration: none;
+   }
+   
+   .dropdown-content {
+       display: none;
+       position: absolute;
+       background: #0085be;
+       min-width: 180px;
+       border-bottom: 0.01em dotted #00aeef;
+       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+       z-index: 1;
+       top: 80px;
+       transition: all .3s ease-in-out;
+   }
+   
+   .dropdown-content a {
+       color: white;
+       padding: 10px 16px;
+       text-decoration: none;
+       display: block;
+       text-align: center;
+       line-height: 2;
+   }
+   
+   .dropdown-content a:hover {
+       background: #00aeef;
+   }
+   
+   .dropdown:hover .dropdown-content {
+       display: block;
+   }
+
+    .bg{
+      background-image: url("./bg.png");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+   .content{
+      padding: 20px 150px 50px 150px;
+   }
+
+   .border-content{
+      position: absolute;
+      height: 80%;
+      width: 80%; 
+      background-color: white;
+      border: white;
+      border-radius: 20px;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+   }
+   .container-border-content {
+      display: flex;
+   }
+   .container-border-content-left {
+      height: 500px;
+      width: 400px;
+      padding-left: 20px;
+   }
+
+   .container-border-content-right {
+      height: 500px;
+      width: 400px;
+      padding-right: 20px;
+   }
+
+   .container-border-content-between {
+      height: 500px;
+      width: 400px;
+      padding-left: 10px;
+      padding-right: 20px;
+   }
+
+   h1 {
+      text-align: center;
+      color: #FACC2E;
+   }
+   h3 {
+      text-align: center;
+      font-style: bold;
+   }
+   hr {
+      height: 3px;
+   }
+
+</style>
+
+<!-- html -->
+<div id="main-menu">
+   <ul class="menu">
+       <li >
+         <img src="./index/logo.png"; width="100px" height="60px"/></li>
+       <li class="home">
+           <a href="./index.html"> Home</a>
+       </li>
+       <li>
+           <a href="./gioi-thieu.html"> Giới thiệu</a>
+       </li>
+       <li class="dropdown">
+           <a class="dropdown-btn"> Đào tạo - Tuyển sinh</a>
+           <div class="dropdown-content">
+               <a href="./chuong-trinh-dao-tao.html">Đào tạo</a>
+               <a href="./tuyen-sinh.html">Tuyển sinh</a>
+           </div>
+       </li>
+       <li>
+           <a href="./gallery.html"> Gallery</a>
+       </li>
+       <li>
+           <a href="./tin-tuc.html"> Tin tức - Sự kiện</a>
+       </li>
+       <li>
+           <a href="./final-exam-list.html">Bài nộp</a>
+       </li>
+
+       <li>
+           <a href="#">Liên hệ</a>
+       </li>
+   </ul>
+</div>
+
+<div class="bg">
+   <div class="content">
+      <div class="border-content">
+         <h1>HOẠT ĐỘNG HỌC VIÊN</h1>
+         <div class="container-border-content">
+            <div class="container-border-content-left">
+               <img style="padding-top: 20px;
+                     height: 200px; 
+                     width: 380px;"
+                  src="./gallery/gallery-1.jpg" alt="">
+               <p style="text-align: right;">Thứ Hai, 18-01-2021</p>
+               <h3>APE-LAND – Tinh cầu rực rỡ của những kẻ mộng mơ</h3>
+               <p>Trở lại với concept vũ trụ, tối ngày 20/12 vừa qua tại trung tâm tổ
+                  chức sự kiện CenxSpace, bữa tiệc Giáng Sinh do Arena Multimedia
+                  phối hợp với Aptech đồng tổ chức đã thu hút sự có mặt của gần 300
+                  Arenaites và Aptechites. Với khu vực check-in cực chất, quầy
+                  teabreak ấn tượng,...</p>
+            </div>
+
+            <div class="container-border-content-between">
+               <img style="padding-top: 20px;
+                     height: 200px; 
+                     width: 380px;"
+                  src="./gallery/gallery-2.png"
+                  alt="">
+               <p style="text-align: right;">Thứ Tư, 22-07-2020</p>
+               <h3>Chìa khóa cho sự sáng tạo và những nguyên tắc cần biết</h3>
+               <p>Trở lại với concept vũ trụ, tối ngày 20/12 vừa qua tại trung tâm tổ
+                  chức sự kiện CenxSpace, bữa tiệc Giáng Sinh do Arena Multimedia
+                  phối hợp với Aptech đồng tổ chức đã thu hút sự có mặt của gần 300
+                  Arenaites và Aptechites. Với khu vực check-in cực chất, quầy
+                  teabreak ấn tượng,...</p>
+            </div>
+
+            <div class="container-border-content-right">
+               <img style="padding-top: 20px;
+                     height: 200px; 
+                     width: 380px;"
+                  src="./gallery/gallery-3.jpg"  
+                  alt="">
+               <p style="text-align: right;">Thứ Tư, 06-07-2020</p>
+               <h3>Trở thành ứng viên sáng giá trong lần phỏng vấn đầu tiên cùng Mr.
+                  Araki Kiyotoshi</h3>
+               <p>
+                  Xuất hiện trong bộ trang phục chỉnh chu chuẩn phong thái người
+                  Nhật, diễn giả Mr. Araki Kiyotoshi (Phó Tổng giám đốc công ty TNHH
+                  Sekisho Việt Nam) ghi điểm trong mắt các bạn trẻ tại buổi seminar
+                  “Cách viết CV & đối sách phỏng vấn” diễn ra vào ngày 26/6 bởi sự
+                  đơn giản,...</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

@@ -1,0 +1,70 @@
+.timhieungay a{
+    text-decoration: none;
+}
+.timhieungay:hover{
+    background: lightcyan;
+    color: rgb(248, 0, 0);
+    display: inline-block;
+}
+.loichao{
+   padding-top: 10%;
+   padding-right: 80%;
+}
+.timhieungay{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    background:rgb(247, 222, 4);
+    text-align: center;
+    margin: 10%;
+    border-radius: 30px;
+}
+.boxcontent {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    border:3px solid #00afef54;
+    height:450px;
+    border-radius: 36px;
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    align-items: center;
+    padding:30px;
+    color:rgb(3, 0, 0)
+}
+.boxcontent .titlecontent{
+    font-size: 22px;
+    color:#000;
+    font-weight: bold;
+}
+.boxcontent .titlemain{
+    color: rgb(255, 238, 0);
+    font-size: 22px;
+}
+.boxcontent .contenttext{
+    text-align: left;
+    margin:0;
+    font-size: 17px;
+    letter-spacing:1.3px
+}
+.boxcontent .contentmonhoc{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+.boxcontent .contentmonhoc li{
+   text-align: left;
+   transition: all 0.25s linear;
+   font-size: 14px;
+}
+.boxcontent .titlelistmonhoc{
+    text-align: left;
+}
+.boxcontent .contentmonhoc li:first-child{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+}

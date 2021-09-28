@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Phạm Duy Khang </title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                background-image: url(./img/bg.png);
+
+            }
+            
+            .menu {
+                height: 80px;
+                line-height: 80px;
+            }
+            
+            .home {
+                border-left: 0.01em dotted #00aeef;
+            }
+            
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                /* background: #F8C800; */
+                background: #0085be;
+                /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2); */
+            }
+            
+            li {
+                float: left;
+                border-right: 0.01em dotted #00aeef;
+                font-size: 18px;
+            }
+            
+            li.dropdown {
+                display: inline-block;
+                width: 180px;
+            }
+            
+            li a:hover,
+            .dropdown:hover {
+                background: #00aeef;
+            }
+            
+            li a,
+            .dropdown-btn {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 0 16px;
+                text-decoration: none;
+            }
+            
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                /*background: #F8C800;
+            */
+                background: #0085be;
+                min-width: 180px;
+                border-bottom: 0.01em dotted #00aeef;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+                z-index: 1;
+                top: 80px;
+                transition: all .3s ease-in-out;
+            }
+            
+            .dropdown-content a {
+                color: white;
+                padding: 10px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                line-height: 2;
+            }
+            
+            .dropdown-content a:hover {
+                background: #00aeef;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            #container{
+                background: white;
+        width: 1050px;
+        height: 700px;
+        border-radius: 20px;
+        margin-top: 100px;
+        margin-left: 450px;
+            }
+            .box-sizing{
+                padding: 10px;
+                box-sizing: border-box;
+            }
+
+            h2{
+                color: #facc2e;
+                text-align: center;
+                font-family: sans-serif;
+                padding: 0%;
+            }
+            #col1{
+                width: 33%;
+                height: auto;
+                float: left;
+                text-align: right;
+            }
+
+            #col2{
+                width: 33%;
+                height: auto;
+                float: left;
+                text-align: right;
+            }
+            #col3{
+                width: 33%;
+                height: auto;
+                float: right;
+                text-align: right;
+            }
+            i{
+                color: gray;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            p{
+                text-align: left;
+            }
+        </style>
+        
+        <!-- html -->
+        <div id="main-menu">
+            <ul class="menu">
+                <li>
+                    <img src="./img/311220201609416002.png" width="200px">
+                </li>
+                <li class="home">
+                    <a href="./index.html"> Home</a>
+                </li>
+                <li>
+                    <a href="./gioithieu.html"> Giới thiệu</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-btn"> Đào tạo - Tuyển sinh</a>
+                    <div class="dropdown-content">
+                        <a href="./daotao.html">Đào tạo</a>
+                        <a href="./tuyensinh.html">Tuyển sinh</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./gallery.html"> Gallery</a>
+                </li>
+                <li>
+                    <a href="./tintuc.html"> Tin tức - Sự kiện</a>
+                </li>
+                <li>
+                    <a href="./final-exam-list.html">Bài nộp</a>
+                </li>
+        
+                <li>
+                    <a href="#">Liên hệ</a>
+                </li>
+            </ul>
+            <div id="container" class="box-sizing">
+                <h2>TIN ARENA</h2>
+                <div id="col1" class="box-sizing">
+                    <img src="./img/tin-tuc-1.png" width="300px" height="200px" >
+                    <i>Thứ tư, 11-08-2021</i>
+                    <h4>Top 5 lý do nên nhập học trong mùa đại dịch: Tuyệt đối phải bắt kịp xu
+                        thế toàn cầu, điều cuối nghe là muốn đăng ký học gấp! </h4>
+                    <p> Có không ít lý do để phụ huynh yên tâm, tin tưởng cho con em nhập
+                        học vào thời điểm hiện tại và tất cả đều được “bộ đôi quyền lực”: Anh
+                        Đinh Trí Dũng – Brand Manager @ Arena Multimedia và ThS Vũ Anh
+                        Đức – Giám đốc Đào tạo @ Arena Multimedia tiết....</p>
+                </div>
+                <div id="col2" class="box-sizing">
+                    <img src="./img/tin-tuc-2.webp" width="300px" height="200px">
+                    <i> Thứ tư , 11-08-2021</i>
+                    <h4> Workshop #4 cùng Đạo diễn – Nhà sản xuất Đoàn Ngọc Minh và đại
+                        diện TikTok: Sáng tạo nội dung ngắn – xu hướng không thể bỏ lỡ!</h4>
+                    <p>Vào ngày 31/7/2021 vừa qua, workshop cuối cùng trong chuỗi
+                        workshop online Skill Up cùng đội ngũ ban giám khảo cuộc thi Show It
+                        NOW 2021 đã được diễn ra với chủ đề: “Sáng tạo nội dung ngắn đa
+                        nền tảng” cùng đạo diễn - nhà sản xuất Đoàn Ngọc Minh và chị Linh
+                        Chi, đại diện của Tiktok Việt Nam. Buổi chia sẻ đã mang đến nhiều trải
+                        nghiệm tuyệt vời và những bí kíp bỏ túi đáng giá giúp các bạn chinh
+                        phục giải thưởng hấp dẫn của cuộc thi năm nay.. </p>
+                </div>
+                <div id="col3" class="box-sizing">
+                    <img src="./img/tin-tuc-3.webp" width=" 300px" height="200px">
+                    <i> Thứ tư , 11-08-2021</i>
+                    <h4>Workshop #3: Cùng Associate Creative Lead Lý Thành Cơ và Thạc sĩ
+                        Vũ Anh Đức “unblock” ý tưởng sáng tạoi</h4>
+                        <p> Vào ngày 31/7/2021 vừa qua, workshop thứ ba trong khuôn khổ chuỗi
+                            workshop online: Skill Up cùng đội ngũ ban giám khảo của Show It
+                            NOW 2021 đã được diễn ra với chủ đề: “Giải quyết chuyện “bí” ý tưởng
+                            sáng tạo cùng anh Lý Thành cơ và ThS Vũ Anh Đức”. Tại đây, các bạn
+                            trẻ đã có cơ hội cập nhật kiến thức về ngành sáng tạo cùng những bí
+                            quyết để khơi thông nguồn suối ý tưởng của mỗi người.</p>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(./img/bg.png);
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    *{
+        text-decoration: none;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .header{
+        background: #0085BE;
+        display: flex;
+        height: 4em;
+        line-height: 4em;
+
+    }
+    img{
+        width: 100px;
+        padding-left:5px;
+    }
+    .menu{
+        display: flex;}
+    .menu li{
+        padding-right: 20px;
+        font-size: 17px;
+    }   
+#content{
+    background: white;
+    width: 1200px;
+    height: 600px;
+    margin-top: 25px;
+    margin-left:100px;
+    margin-right: 100px;
+    color: black;
+    border-radius: 20px;
+
+}
+h3{color: black;}
+p{color: black;}
+h2{
+    color: #F8C81B;
+}
+.yellow-border{
+    border: 1px solid #F8C81B;
+}
+#minhhoa2{
+    width: 400px;
+    height: 200px;
+    margin-left: 750px;
+    margin-top: 10px;  
+}
+#minhhoa1{
+    width: 400px;
+    height: 200px;
+    margin-left: -750px;
+    margin-top: 10px;
+}
+#col-1{
+    width: 30%;
+    margin-top: -210px;
+    float: right;
+    margin-left: 100px;
+    font-size: 12px;
+    text-align: left;
+}
+#col-2{
+    width: 20%;
+    float: left;
+    margin-left: 27px;
+    font-size: 12px;
+    text-align: left;
+    margin-top: -200px;
+    text-transform:initial;
+    
+}
+.box-sizing{
+    box-sizing: border-box;
+}
+</style>
+<body>
+    <div class="header">
+        <a class="logo">
+            <img src="img/logo.webp" alt="Arena Multimedia" title="trường của tao">
+        </a>
+        <ul class="menu">
+            <li> <a href="menu1">Home</a> </li>
+            <li> <a href="menu2">Giới thiệu</a> </li>
+            <li> <a href="menu3">Đào tạo - Tuyển</a> </li>
+            <li> <a href="menu4">Gallery</a> </li>
+            <li> <a href="menu5">Tin tức - Sự kiện</a> </li>
+            <li> <a href="menu6">Bài nộp</a> </li>
+            <li> <a href="menu7">Liên hệ</a> </li>
+        </ul>
+    </div>
+    <div id="content">
+        <!--tiêu đề-->
+        <h2>TẠI SAO LẠI CHỌN ARENA MULTIMEDIA</h2>
+        <br>
+        <hr class="yellow-border">
+        <!--chia cột-->
+        <div  class="box-sizing"><img id="minhhoa1" src="/img/gioi-thieu-1.png" alt="hinh nền á cha"></div>
+        <div id="col-1"  class="box-sizing">
+            <h3>Phương pháp đào tạo tiên tiến, môi trường đào tạo tiêu chuẩn</h3>
+        <br>
+        <p>Phần lớn thời lượng của chương trình dành cho thực hành hoặc lý
+            thuyết tạo nền tảng cho thực hành. Mỗi học kỳ có 2 – 3 môn học thuần
+            túy lý thuyết liên quan đến chủ đề chính của học kỳ đó. Ngoài kỹ năng
+            sử dụng phần mềm, học viên còn được trang bị hệ thống lý thuyết và
+            phương pháp luận xuyên suốt, nhờ đó việc sử dụng các công cụ phần
+            mềm sẽ đạt hiệu quả cao hơn, nắm vững cách xây dựng các sản phẩm
+            Mỹ thuật Đa phương tiện có chất lượng cao một cách sáng tạo và khoa
+            học.Sĩ số của mỗi lớp học không vượt quá 25 học viên, đảm bảo việc
+            truyền đạt kiến thức và tương tác giữa giảng viên – học viên được hiệu
+            quả nhất.</p>
+        </div>
+        <div class="box-sizing" > <img id="minhhoa2" src="/img/gioi-thieu-2.jpg" alt="hình nề nữa đó cha"></div>
+        <div id="col-2"  class="box-sizing">  
+            <h3>Chính sách khuyến học đa dạng</h3>
+        <br>
+        <p> – Cấp học bổng cho những tài năng trẻ..</p>
+            <br>
+        <p>– Các chương trình hỗ trợ tín dụng giáo dục.</p>
+            <br>
+        <p> – Khen thưởng, tặng học bổng cho học viên có thành tích học tập tốt.</p>
+        </div>
+        
+    </div>
+</body>
+</html>

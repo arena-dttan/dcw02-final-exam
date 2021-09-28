@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Home</title>
+<meta charset="UTF-8"/>
+   <style>
+    body{
+        background-image: url(./image/bg.png);
+    }    
+    .menu {
+        height: 80px;
+        line-height: 80px;
+    }
+    
+    .hinh{
+        margin-top: 100px;
+        padding-left: 35px;
+    }
+    
+    .home {
+        border-left: 0.01em dotted #00aeef;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #0085be;
+    }
+    
+    li {
+        float: left;
+        border-right: 0.01em dotted #00aeef;
+        font-size: 18px;
+    }
+    
+    li.dropdown {
+        display: inline-block;
+        width: 180px;
+    }
+    
+    li a:hover,
+    .dropdown:hover {
+        background: #00aeef;
+    }
+    
+    li a,
+    .dropdown-btn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 0 16px;
+        text-decoration: none;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background: #0085be;
+        min-width: 180px;
+        border-bottom: 0.01em dotted #00aeef;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+        z-index: 1;
+        top: 80px;
+        transition: all .3s ease-in-out;
+    }
+    
+    .dropdown-content a {
+        color: white;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        line-height: 2;
+    }
+    
+    .dropdown-content a:hover {
+        background: #00aeef;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #btn{
+        width: 150px;
+        height: 35px;
+        background: #FACC2E;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 15px;
+        margin-left: 100px;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="main-menu">
+    <ul class="menu">
+        <li>
+            <img src="image/311220201609416002.png" width="190px">
+        </li>
+        <li class="home">
+            <a href="./Trang index.html"> Home</a>
+        </li>
+        <li>
+            <a href="./Trang gioi-thieu.html"> Giới thiệu</a>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-btn"> Đào tạo - Tuyển sinh</a>
+            <div class="dropdown-content">
+                <a href="./Trang dao-tao.html">Đào tạo</a>
+                <a href="./Trang tuyen-sinh.html">Tuyển sinh</a>
+            </div>
+        </li>
+        <li>
+            <a href="./Trang gallery.html"> Gallery</a>
+        </li>
+        <li>
+            <a href="./Trang tin-tuc.html"> Tin tức - Sự kiện</a>
+        </li>
+        <li>
+            <a href="./final-exam-list.html">Bài nộp</a>
+        </li>
+
+        <li>
+            <a href="#">Liên hệ</a>
+        </li>
+    </ul>
+<div class="hinh">
+    <img src="./image/head-text.webp">
+</div>
+   <br>
+
+   <div id="btn"> 
+       <a href="./Trang dao-tao.html">TÌM HIỂU NGAY</a>
+   </div>
+
+   </div>
+
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Các meta (siêu dữ liệu) -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- Tiêu đề hiển thị trên thanh địa chỉ trình duyệt -->
+    <title>Arena Mutimedia</title>
+
+    <!-- icon trên thanh địa chỉ trình duyệt -->
+    <link rel="icon" href="./images/favicon.ico" />
+
+    <!-- Sử dụng font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid gray;
+            border-collapse: collapse;
+            padding: 10px 20px;
+            text-align: left;
+            margin-left: 80px;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        
+        th {
+            background: lightgreen;
+        }
+        
+        #main-page a {
+            text-decoration: none;
+            color: blue;
+        }
+        
+        #main-page a:hover {
+            display: block;
+            background: yellow;
+        }
+        
+        #main-page a:visited {
+            color: red;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!-- id header -->
+        <div id="header">
+            <div id="logo"><img src="./images/logo.webp"></div>
+            <div id="main-menu">
+                <ul class="menu">
+                    <li class="home">
+                        <a href="./index.html"> Home</a>
+                    </li>
+                    <li>
+                        <a href="./gioi-thieu.html"> Giới thiệu</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-btn"> Đào tạo - Tuyển sinh</a>
+                        <div class="dropdown-content">
+                            <a href="./chuong-trinh-dao-tao.html">Đào tạo</a>
+                            <a href="./tuyen-sinh.html">Tuyển sinh</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./gallery.html"> Gallery</a>
+                    </li>
+                    <li>
+                        <a href="./tin-tuc.html"> Tin tức - Sự kiện</a>
+                    </li>
+                    <li>
+                        <a href="./final-exam-list.html">Bài nộp</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- id main content -->
+        <div id="main-content">
+
+            <div id="main-page">
+                <h2>Danh sách các bài đã nộp</h2>
+                <table style="width: 80%;">
+                    <thead>
+                        <tr>
+                            <th style="width: 30px;">Stt</th>
+                            <th>Họ và tên</th>
+                            <th>Note</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="./final-list/1-DCW_Final_Bui-Viet-Trung_D2012H2/" target="_blank">Bùi Việt Trung</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <!-- Bạn này bổ sung bày sau -->
+                        <tr>
+                            <td>2</td>
+                            <td><a href="#" target="_blank">Nguyễn Anh Tú</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td><a href="./final-list/3-DCW_Final_Vo-Tien-Dat_D2012H2/" target="_blank">Võ Tiến Đạt</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td><a href="./final-list/4-DCW_FINAL_PHAM-DUY-KHANG_D201H2/" target="_blank">Phạm Duy Khang</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td><a href="./final-list/5-DWC_Final_Nguyen-Ngoc-Thien_D2012H2/" target="_blank">Nguyễn Ngọc Thiện</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td><a href="./final-list/6-DCW_Final_Tran-Cong-Thai_D2012H2/" target="_blank">Trần Công Thái</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td><a href="./final-list/7-DCW_Final_Luu-Tan-Tai_D2012H2/" target="_blank">Lưu Tấn Tài</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td><a href="./final-list/8-DCW_FINAL_Nguyen-Quoc-Long_D2012H2/" target="_blank">Nguyễn Quốc Long</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td><a href="./final-list/9-DCW_Final_Tran-Thi-Khanh-Hoa_D2012H2/" target="_blank">Trần Thị Khánh Hòa</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td><a href="./final-list/10-DCW_final_Doan-Le-Thao-Vi_D2012H2/" target="_blank">Đoàn Lê Thảo Vi</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>11</td>
+                            <td><a href="./final-list/11-DCW_Final_Dang-Vinh-Duy_D2012H2/" target="_blank">Đặng Vĩnh Duy</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>12</td>
+                            <td><a href="./final-list/12-DCW_Final_ Le-Thi-Ngoc-Nu_D2012H2/" target="_blank">Lê Thị Ngọc Nữ</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>13</td>
+                            <td><a href="#" target="_blank">Dương Anh Thư</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>14</td>
+                            <td><a href="./final-list/14-DCW_Final_Bui-Cong-Duy_D2012H2/" target="_blank">Bùi Công Duy</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>15</td>
+                            <td><a href="./final-list/15-DCW_Final_HUONG-GIANG_D2012H2/" target="_blank">Nguyễn Thị Hương Giang</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>16</td>
+                            <td><a href="./final-list/16-DCW_Final_Nguyen-Nhat-Hao_D2012H2/" target="_blank">Nguyễn Nhật Hào</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>17</td>
+                            <td><a href="./final-list/17-DWC_Final_Dao-Nhat-Hoang_D2012H2/" target="_blank">Đào Nhật Hoàng</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>18</td>
+                            <td><a href="./final-list/18-DCW_Final_Phan-Huy-Hoang_D2012H2/" target="_blank">Phan Huy Hoàng</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>19</td>
+                            <td><a href="./final-list/19-DCW_Final_Ly-Lieu-Huynh_D2012H2/" target="_blank">Lý Liễu Huỳnh</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>20</td>
+                            <td><a href="./final-list/20-DCW_Final_Bui-Quoc-Khanh_D2012H2/" target="_blank">Bùi Quốc Khánh</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>21</td>
+                            <td><a href="./final-list/21-DCW_Final_Vo Phuong My Linh_D2012H2/" target="_blank">Võ Phương Mỹ Linh</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>22</td>
+                            <td><a href="./final-list/22-DCW_Final_Truong-Hoang-Thai_D2012H2/" target="_blank">Trương Hoàng Thái</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>23</td>
+                            <td><a href="./final-list/23-DCW_Fianl_Ho-Hai-Nhu-Ly-D2012H2/" target="_blank">Hồ Hải Như Lý</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>24</td>
+                            <td><a href="./final-list/24-DCW_Final_Huynh-Vo-Huu-Man_D2009K2/" target="_blank">Huỳnh Võ Hữu Mẫn</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td>25</td>
+                            <td><a href="./final-list/25-DCW_Final_NGUYEN-SONG-THIEN-BAO_D2012H2/" target="_blank">Nguyễn Song Thiên Bảo</a></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

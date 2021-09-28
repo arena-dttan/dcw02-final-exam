@@ -1,0 +1,29 @@
+#box{
+    width: 80%;
+    height: 80%;
+    color:black;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: white;
+    margin: 5%;
+
+}
+
+h2{
+    color:  rgb(247, 222, 4);
+}
+.phuongphap{
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+    float: right;
+}
+.chinhsach{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Trang Gallery</title>
+<meta charset="UTF-8"/>
+   <style>
+    body{
+        background-image: url(./image/bg.png);
+    }    
+    .menu {
+        height: 80px;
+        line-height: 80px;
+    }
+    
+    .hinh{
+        margin-top: 100px;
+        padding-left: 35px;
+    }
+    
+    .home {
+        border-left: 0.01em dotted #00aeef;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #0085be;
+    }
+    
+    li {
+        float: left;
+        border-right: 0.01em dotted #00aeef;
+        font-size: 18px;
+    }
+    
+    li.dropdown {
+        display: inline-block;
+        width: 180px;
+    }
+    
+    li a:hover,
+    .dropdown:hover {
+        background: #00aeef;
+    }
+    
+    li a,
+    .dropdown-btn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 0 16px;
+        text-decoration: none;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background: #0085be;
+        min-width: 180px;
+        border-bottom: 0.01em dotted #00aeef;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+        z-index: 1;
+        top: 80px;
+        transition: all .3s ease-in-out;
+    }
+    
+    .dropdown-content a {
+        color: white;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        line-height: 2;
+    }
+    
+    .dropdown-content a:hover {
+        background: #00aeef;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    #container {
+        display:inline-block;
+        background: white;
+        width: 990px;
+        height: 550px;
+        border-radius: 20px;
+        margin-top: 15px;
+        margin-left: 115px;
+        border: blue;
+        }
+
+    .box-sizing{
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    h1{
+        text-align: center;
+        color: #FACC2E;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 15px;
+    }
+
+    h4{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #col-01{
+        width: 33%;
+        height: auto;
+        float: left;
+        text-align: right;
+    }
+
+    #col-02{
+        width: 33%;
+        height: auto;
+        float: left;
+        text-align: right;
+    }
+
+    #col-03{
+        width: 33%;
+        height: auto;
+        float: right;
+        text-align: right;
+    }
+
+    i{
+        color: gray;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    p{
+        text-align: left;
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="main-menu">
+      <ul class="menu">
+          <li>
+              <img src="image/311220201609416002.png" width="190px">
+          </li>
+          <li class="home">
+              <a href="./Trang index.html"> Home</a>
+          </li>
+          <li>
+              <a href="./Trang gioi-thieu.html"> Giới thiệu</a>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-btn"> Đào tạo - Tuyển sinh</a>
+              <div class="dropdown-content">
+                  <a href="./Trang dao-tao.html">Đào tạo</a>
+                  <a href="./Trang tuyen-sinh.html">Tuyển sinh</a>
+              </div>
+          </li>
+          <li>
+              <a href="./Trang gallery.html"> Gallery</a>
+          </li>
+          <li>
+              <a href="./Trang tin-tuc.html"> Tin tức - Sự kiện</a>
+          </li>
+          <li>
+              <a href="./final-exam-list.html">Bài nộp</a>
+          </li>
+  
+          <li>
+              <a href="#">Liên hệ</a>
+          </li>
+      </ul>
+
+      <div id="container">
+           <h1>HOẠT ĐỘNG HỌC VIÊN</h1>
+           
+      <div id="col-01" class="box-sizing">
+          <img src="./image/gallery-1.jpg" width="300px" height="170px">
+           <i>Thứ hai, 18-01-2021</i>
+           <h4>APE-LAND – Tinh cầu rực rỡ của những kẻ mộng mơ</h4>
+           
+           <p>Trở lại với concept vũ trụ, tối ngày 20/12 vừa qua tại trung tâm tổ
+            chức sự kiện CenxSpace, bữa tiệc Giáng Sinh do Arena Multimedia
+            phối hợp với Aptech đồng tổ chức đã thu hút sự có mặt của gần 300
+            Arenaites và Aptechites. Với khu vực check-in cực chất, quầy
+            teabreak ấn tượng,...</p>
+      </div>     
+  
+      <div id="col-02" class="box-sizing">
+        <img src="./image/gallery-2.png" width="300px" height="170px">
+        <i>Thứ tư, 22-07-2020</i> 
+          <h4>Chìa khóa cho sự sáng tạo và những nguyên tắc cần biết</h4>
+                  
+          <p>Trở lại với concept vũ trụ, tối ngày 20/12 vừa qua tại trung tâm tổ
+            chức sự kiện CenxSpace, bữa tiệc Giáng Sinh do Arena Multimedia
+            phối hợp với Aptech đồng tổ chức đã thu hút sự có mặt của gần 300
+            Arenaites và Aptechites. Với khu vực check-in cực chất, quầy
+            teabreak ấn tượng,...</p>
+      </div>
+  
+      <div id="col-03" class="box-sizing">
+        <img src="./image/gallery-3.jpg" width="300px" height="170px">
+        <i>Thứ tư, 08-07-2020</i>
+          <h4>Trở thành ứng viên sáng giá trong lần phỏng vấn đầu tiên cùng Mr.Araki Kiyotoshi</h4>
+                 
+          <p>Xuất hiện trong bộ trang phục chỉnh chu chuẩn phong thái người
+            Nhật, diễn giả Mr. Araki Kiyotoshi (Phó Tổng giám đốc công ty TNHH
+            Sekisho Việt Nam) ghi điểm trong mắt các bạn trẻ tại buổi seminar
+            “Cách viết CV & đối sách phỏng vấn” diễn ra vào ngày 26/6 bởi sự
+            đơn giản,...</p>
+        </div>
+
+      </div>
+
+  </body>
+
+</html>

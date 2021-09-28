@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Sử dụng cho định dạng main menu */
+      html,body {
+        background-image: url(./image/bg.png);
+        text-align: justify;
+        width: 100%;
+      }
+
+      .menu {
+        height: 80px;
+        line-height: 80px;
+      }
+
+      .home {
+        border-left: 0.01em dotted #00aeef;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background: #F8C800; */
+        background: #0085be;
+        /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2); */
+      }
+
+      li {
+        float: left;
+        border-right: 0.01em dotted #00aeef;
+        font-size: 18px;
+      }
+
+      li.dropdown {
+        display: inline-block;
+        width: 180px;
+      }
+
+      li a:hover,
+      .dropdown:hover {
+        background: #00aeef;
+      }
+
+      li a,
+      .dropdown-btn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 0 16px;
+        text-decoration: none;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        /*background: #F8C800;
+                  */
+        background: #0085be;
+        min-width: 180px;
+        border-bottom: 0.01em dotted #00aeef;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+        z-index: 1;
+        top: 80px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        line-height: 2;
+      }
+
+      .dropdown-content a:hover {
+        background: #00aeef;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      #container {
+        background: white;
+        width: 1200px;
+        height: 620px;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-left: 150px;
+      }
+      h2{
+          color:#FACC2E ;
+          text-align: center;
+      }
+      h3{
+          text-align: center;
+      }
+      .cot1{
+          
+          width: 25%;
+          height: auto;
+          float: left;
+          padding: 20px;
+          box-sizing: border-box;
+          
+      }
+      .cot2{
+          
+          width: 25%;
+          height: auto;
+          float: left;
+          padding: 20px;
+          box-sizing: border-box;
+         
+      }
+      .cot3{
+          
+          width: 25%;
+          height: auto;
+          float: left;
+          padding: 20px;
+          box-sizing: border-box;
+         
+      }
+      .cot4{
+         
+          width: 25%;
+          height: auto;
+          float: left;
+          padding: 20px;
+          box-sizing: border-box;
+        
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div id="main-menu">
+      <ul class="menu">
+        <li>
+          <img src="./image/logo-2.webp" width="400px" />
+        </li>
+        <li class="home">
+          <a href="./index.html"> Home</a>
+        </li>
+        <li>
+          <a href="./gioi-thieu.html"> Giới thiệu</a>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-btn"> Đào tạo - Tuyển sinh</a>
+          <div class="dropdown-content">
+            <a href="./dao-tao.html">Đào tạo</a>
+            <a href="./tuyen-sinh.html">Tuyển sinh</a>
+          </div>
+        </li>
+        <li>
+          <a href="./gallery.html"> Gallery</a>
+        </li>
+        <li>
+          <a href="./tin-tuc.html"> Tin tức - Sự kiện</a>
+        </li>
+        <li>
+          <a href="./final-exam-list.html">Bài nộp</a>
+        </li>
+
+        <li>
+          <a href="#">Liên hệ</a>
+        </li>
+      </ul>
+      
+      <div id="container">
+        <br>
+        <h2>Thông báo Tuyển sinh năm 2021</h2>
+        <br>
+        
+          <div class="cot1">
+              <h3>Chuyên ngành</h3>
+              <hr>
+              <br>Mỹ Thuật<br>
+              <br>Đa phương tiện<br>
+
+          </div>
+          <div class="cot2">
+              <h3>Khu vực tuyển sinh</h3>
+              <hr>
+              <br>Toàn quốc<br>
+
+
+          </div>
+          <div class="cot3">
+              <h3>Đối tượng tuyển sinh</h3>
+              <hr>
+              <br>Học sinh THPT<br>
+              <br>Sinh viên<br>
+              <br>Người đi làm<br>
+
+          </div>
+          <div class="cot4">
+              <h3>Hình thức tuyển sinh</h3>
+              <hr>
+              <br>Cách 1: Thi tuyển trực tiếp<br>
+              <br>Cách 2: Nộp Porfolio<br>
+
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

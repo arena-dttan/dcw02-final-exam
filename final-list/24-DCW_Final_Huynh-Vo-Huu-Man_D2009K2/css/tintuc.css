@@ -1,0 +1,39 @@
+#box{
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    color:black;
+    border-radius: 30px;
+    display: inline-block;
+    background-color: white;
+    margin: 5%;
+}
+.boxtintuc .titlemain{
+    color: rgb(247, 222, 4);
+    font-size: 22px;
+  }
+  .cot1 {
+    width: 33%;
+    height: auto;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .cot2 {
+    width: 33%;
+    height: auto;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .cot3 {
+    width: 33%;
+    height: auto;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  h5{
+      color: gray;
+      text-align: right;
+  }
