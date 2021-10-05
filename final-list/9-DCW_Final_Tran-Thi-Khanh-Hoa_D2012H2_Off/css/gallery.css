@@ -1,0 +1,52 @@
+body{ 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background: white;
+    color: black;
+    width: 80%;
+    height: auto;
+    border-radius: 30px;
+    margin-top: 50px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color:orange;
+    text-transform: uppercase;
+}
+
+h4 {
+    text-align: center;
+}
+
+#col1 {
+    width: 33%;
+    height: auto;
+    float: left;
+}
+
+#col2 {
+    width: 33%;
+    height: auto;
+    float: left;
+}
+
+#col3 {
+    width: 33%;
+    height: auto;
+    float: right;
+}
+
+.box-sizing {
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}

@@ -43,7 +43,7 @@ li {
 
 li.dropdown {
     display: inline-block;
-    min-width: 200px;
+    width: 200px;
     text-align: center;
 }
 
